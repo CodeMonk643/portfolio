@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SKILLS</a></li>
+                <li><a href="/contact.html">CONTACT</a></li>
+            </ul>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <!-- <img src="images/menu.png" alt="Menu" class="menu-icon"> -->
+        </nav>
+        <div class="text-box">
+            <h1>I am <span class="auto-input"></span></h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="/contact.html">Contact me</a>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <img src="images/image.png" alt="User" class="user-img">
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed(".auto-input", {
+        strings: ["a Student", "a  Programmer", "a Musician", "Dhruv"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+    })
+</script>
+<script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+</script>
+
+</html>
